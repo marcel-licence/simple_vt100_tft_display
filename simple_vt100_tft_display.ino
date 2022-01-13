@@ -1,17 +1,41 @@
-/***************************************************
-  This is our GFX example for the Adafruit ILI9341 Breakout and Shield
-  ----> http://www.adafruit.com/products/1651
+/*
+ * Copyright (c) 2022 Marcel Licence
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ * Dieses Programm ist Freie Software: Sie können es unter den Bedingungen
+ * der GNU General Public License, wie von der Free Software Foundation,
+ * Version 3 der Lizenz oder (nach Ihrer Wahl) jeder neueren
+ * veröffentlichten Version, weiter verteilen und/oder modifizieren.
+ *
+ * Dieses Programm wird in der Hoffnung bereitgestellt, dass es nützlich sein wird, jedoch
+ * OHNE JEDE GEWÄHR,; sogar ohne die implizite
+ * Gewähr der MARKTFÄHIGKEIT oder EIGNUNG FÜR EINEN BESTIMMTEN ZWECK.
+ * Siehe die GNU General Public License für weitere Einzelheiten.
+ *
+ * Sie sollten eine Kopie der GNU General Public License zusammen mit diesem
+ * Programm erhalten haben. Wenn nicht, siehe <https://www.gnu.org/licenses/>.
+ */
 
-  Check out the links above for our tutorials and wiring diagrams
-  These displays use SPI to communicate, 4 or 5 pins are required to
-  interface (RST is optional)
-  Adafruit invests time and resources providing this open source code,
-  please support Adafruit and open-source hardware by purchasing
-  products from Adafruit!
-
-  Written by Limor Fried/Ladyada for Adafruit Industries.
-  MIT license, all text above must be included in any redistribution
- ****************************************************/
+/**
+ * @file simple_vt100_tft_display.ino
+ * @author Marcel Licence
+ * @date 16.12.2021
+ *
+ * @brief  This is the arduino project file to drive the IL9341 tft display
+ * There is just support for some VT100 commands used in the synth / audio projects
+ */
 
 
 #include <TFT_eSPI.h>
